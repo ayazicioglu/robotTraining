@@ -28,3 +28,5 @@ print(metin[-2]) # -2 önceki
 
 
 print(len(metin)) #len fonksiyonu degiskenin veya listenin uzunlugunu verir
+
+print(metin[::-1]) #metni tersten yazdırır
