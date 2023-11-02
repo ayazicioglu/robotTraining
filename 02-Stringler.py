@@ -18,3 +18,13 @@ print(metin[0:5])  # iki nokta koyup bir değer daha yazarsak o dahil olmadan or
 print(metin[0:5:2])  #bir ikinci iki nokta kullanırsak kacar kacar ilerleyecegini soylemis oluruz
 print(metin[3:]) #haba dunya!
 print(metin[:4]) #Merh
+print(metin[::2])
+
+#sonEleman=len(metin)-1
+#print(sonEleman)
+
+print(metin[-1])  #yukarıdaki islemin Python pratigi, son elemanı yazdırır
+print(metin[-2]) # -2 önceki
+
+
+print(len(metin)) #len fonksiyonu degiskenin veya listenin uzunlugunu verir
