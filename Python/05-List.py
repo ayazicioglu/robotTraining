@@ -32,3 +32,9 @@ print(yeniListe)
 urunler=["Bilgisayar","Zil","Laptop","Monitor"]
 
 print(sorted(urunler))
+
+yeniUrunler=[]
+print(type(yeniUrunler))
+
+dahaYeniUrunler=list()
+print(type(dahaYeniUrunler))
