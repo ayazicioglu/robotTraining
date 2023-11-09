@@ -1,0 +1,1 @@
+isimler=["Yusuf","Ahmet","Mehmet"]
