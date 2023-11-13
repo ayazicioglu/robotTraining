@@ -22,4 +22,16 @@ Test 01
         
     END
 
+    # burada listeden once @ kullanirsak listenin elemanlarini tek tek gezer.
+    FOR    ${element}    IN    @{liste} 
+        Log To Console   ${element}
+        
+    END
+
+    # burada listeden once $ kullanirsak listeyi liste olarak alir.
+     FOR    ${element}    IN    ${liste} 
+        Log To Console   ${element}
+        
+    END
+
 *** Keywords ***
