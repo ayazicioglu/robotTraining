@@ -1,5 +1,9 @@
 *** Settings ***
-#
+Documentation    Bu suite ile ABC numarali US nin ozellikleri test edilir
+Library     Collections
+Suite Setup    Testi ${browser} tarayici ile baslat  #tum testlerden onde calismak icin suite setup kullandik
+    
+    # ayrica terminale "robot -v browser:Edge .\RF\08-Keywords.robot" yazarak istedigimiz tarayicida calistirmak mumkun olabilirdi
 
 
 Library    Collections
@@ -15,6 +19,7 @@ Test 01
 
 *** Keywords ***
 Sayilari Bol
+    [Documentation]    Bu keyword gelen sayilari ikiye boler
     [Arguments]    ${liste}
 
     FOR    ${e}    IN    @{liste}
@@ -22,3 +27,8 @@ Sayilari Bol
         Log To Console    ${sonuc}
         
     END
+
+
+Testi ${browser} tarayici ile baslat
+    [Documentation]    Bu keyword konsoldan parametre olarak gelen browser adi ile testi ayaga kaldirir
+    Log To Console    ${browser}
