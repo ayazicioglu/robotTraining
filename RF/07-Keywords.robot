@@ -19,6 +19,10 @@ Test 01
     Log To Console    ${a}
     Log To Console    ${b}
 
+Test 02
+
+    Log To Console    Burasi ikinci Test
+
 *** Keywords ***              #keywords u metot gibi dusunmek gerekir
 Ekrana Merhaba Yaz
     Log To Console    Merhaba

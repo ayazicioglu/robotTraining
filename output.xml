@@ -1,103 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 21:31:05.767" rpa="false" schemaversion="4">
-<suite id="s1" name="07-Keywords" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\07-Keywords.robot">
-<test id="s1-t1" name="Test 01" line="8">
-<kw name="Ekrana Merhaba Yaz">
-<kw name="Log To Console" library="BuiltIn">
-<arg>Merhaba</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.824" endtime="20231113 21:31:05.824"/>
-</kw>
-<status status="PASS" starttime="20231113 21:31:05.824" endtime="20231113 21:31:05.825"/>
-</kw>
-<kw name="Ekrana Yaz">
-<arg>Ahmet</arg>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${yazi}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.826" endtime="20231113 21:31:05.827"/>
-</kw>
-<status status="PASS" starttime="20231113 21:31:05.825" endtime="20231113 21:31:05.827"/>
-</kw>
-<kw name="Ekrana Yaz">
-<arg>${isim} Nasilsin?</arg>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${yazi}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.827" endtime="20231113 21:31:05.828"/>
-</kw>
-<status status="PASS" starttime="20231113 21:31:05.827" endtime="20231113 21:31:05.828"/>
-</kw>
-<kw name="Ekrana Wise Quarter Yaz" sourcename="Ekrana ${yazi} Yaz">
-<kw name="Log To Console" library="BuiltIn">
-<arg>${yazi}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.829" endtime="20231113 21:31:05.829"/>
-</kw>
-<status status="PASS" starttime="20231113 21:31:05.828" endtime="20231113 21:31:05.830"/>
-</kw>
-<kw name="Sayilari Topla">
-<var>${sayilarin_toplami}</var>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 21:38:25.188" rpa="false" schemaversion="4">
+<suite id="s1" name="08-Keywords" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\08-Keywords.robot">
+<test id="s1-t1" name="Test 01" line="12">
+<kw name="Create List" library="BuiltIn">
+<var>@{listem}</var>
+<arg>2</arg>
+<arg>4</arg>
+<arg>6</arg>
+<arg>8</arg>
 <arg>10</arg>
-<arg>20</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231113 21:38:25.261" level="INFO">@{listem} = [ 2 | 4 | 6 | 8 | 10 ]</msg>
+<status status="PASS" starttime="20231113 21:38:25.260" endtime="20231113 21:38:25.261"/>
+</kw>
+<kw name="Sayilari Bol">
+<arg>${listem}</arg>
+<for flavor="IN">
+<var>${e}</var>
+<value>@{liste}</value>
+<iter>
+<var name="${e}">2</var>
 <kw name="Evaluate" library="BuiltIn">
-<var>${topla}</var>
-<arg>${sayi1}+${sayi2}</arg>
+<var>${sonuc}</var>
+<arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:31:05.831" level="INFO">${topla} = 30</msg>
-<status status="PASS" starttime="20231113 21:31:05.830" endtime="20231113 21:31:05.831"/>
-</kw>
-<return>
-<value>${topla}</value>
-<status status="PASS" starttime="20231113 21:31:05.831" endtime="20231113 21:31:05.831"/>
-</return>
-<msg timestamp="20231113 21:31:05.831" level="INFO">${sayilarin_toplami} = 30</msg>
-<status status="PASS" starttime="20231113 21:31:05.830" endtime="20231113 21:31:05.832"/>
+<msg timestamp="20231113 21:38:25.263" level="INFO">${sonuc} = 1.0</msg>
+<status status="PASS" starttime="20231113 21:38:25.262" endtime="20231113 21:38:25.263"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sayilarin_toplami}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.832" endtime="20231113 21:31:05.832"/>
+<status status="PASS" starttime="20231113 21:38:25.263" endtime="20231113 21:38:25.263"/>
 </kw>
-<kw name="İki veya daha fazla deger donduren Keywords">
-<var>${a}</var>
-<var>${b}</var>
-<kw name="Set Variable" library="BuiltIn">
-<var>${isim}</var>
-<arg>Ahmet</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231113 21:31:05.833" level="INFO">${isim} = Ahmet</msg>
-<status status="PASS" starttime="20231113 21:31:05.833" endtime="20231113 21:31:05.833"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${sehir}</var>
-<arg>Denizli</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231113 21:31:05.834" level="INFO">${sehir} = Denizli</msg>
-<status status="PASS" starttime="20231113 21:31:05.833" endtime="20231113 21:31:05.834"/>
-</kw>
-<return>
-<value>${isim}</value>
-<value>${sehir}</value>
-<status status="PASS" starttime="20231113 21:31:05.834" endtime="20231113 21:31:05.834"/>
-</return>
-<msg timestamp="20231113 21:31:05.834" level="INFO">${a} = Ahmet</msg>
-<msg timestamp="20231113 21:31:05.834" level="INFO">${b} = Denizli</msg>
-<status status="PASS" starttime="20231113 21:31:05.833" endtime="20231113 21:31:05.834"/>
+<status status="PASS" starttime="20231113 21:38:25.262" endtime="20231113 21:38:25.263"/>
+</iter>
+<iter>
+<var name="${e}">4</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sonuc}</var>
+<arg>${e}/2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231113 21:38:25.264" level="INFO">${sonuc} = 2.0</msg>
+<status status="PASS" starttime="20231113 21:38:25.264" endtime="20231113 21:38:25.264"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${a}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.834" endtime="20231113 21:31:05.835"/>
+<status status="PASS" starttime="20231113 21:38:25.264" endtime="20231113 21:38:25.266"/>
+</kw>
+<status status="PASS" starttime="20231113 21:38:25.264" endtime="20231113 21:38:25.266"/>
+</iter>
+<iter>
+<var name="${e}">6</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sonuc}</var>
+<arg>${e}/2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231113 21:38:25.267" level="INFO">${sonuc} = 3.0</msg>
+<status status="PASS" starttime="20231113 21:38:25.266" endtime="20231113 21:38:25.268"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${b}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:31:05.835" endtime="20231113 21:31:05.836"/>
+<status status="PASS" starttime="20231113 21:38:25.268" endtime="20231113 21:38:25.269"/>
 </kw>
-<status status="PASS" starttime="20231113 21:31:05.823" endtime="20231113 21:31:05.836"/>
+<status status="PASS" starttime="20231113 21:38:25.266" endtime="20231113 21:38:25.269"/>
+</iter>
+<iter>
+<var name="${e}">8</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sonuc}</var>
+<arg>${e}/2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231113 21:38:25.271" level="INFO">${sonuc} = 4.0</msg>
+<status status="PASS" starttime="20231113 21:38:25.270" endtime="20231113 21:38:25.271"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sonuc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231113 21:38:25.271" endtime="20231113 21:38:25.272"/>
+</kw>
+<status status="PASS" starttime="20231113 21:38:25.270" endtime="20231113 21:38:25.272"/>
+</iter>
+<iter>
+<var name="${e}">10</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sonuc}</var>
+<arg>${e}/2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231113 21:38:25.273" level="INFO">${sonuc} = 5.0</msg>
+<status status="PASS" starttime="20231113 21:38:25.272" endtime="20231113 21:38:25.273"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sonuc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231113 21:38:25.273" endtime="20231113 21:38:25.273"/>
+</kw>
+<status status="PASS" starttime="20231113 21:38:25.272" endtime="20231113 21:38:25.274"/>
+</iter>
+<status status="PASS" starttime="20231113 21:38:25.262" endtime="20231113 21:38:25.274"/>
+</for>
+<status status="PASS" starttime="20231113 21:38:25.261" endtime="20231113 21:38:25.274"/>
+</kw>
+<status status="PASS" starttime="20231113 21:38:25.260" endtime="20231113 21:38:25.274"/>
 </test>
-<status status="PASS" starttime="20231113 21:31:05.770" endtime="20231113 21:31:05.838"/>
+<status status="PASS" starttime="20231113 21:38:25.191" endtime="20231113 21:38:25.276"/>
 </suite>
 <statistics>
 <total>
@@ -106,7 +113,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="07-Keywords">07-Keywords</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="08-Keywords">08-Keywords</stat>
 </suite>
 </statistics>
 <errors>
