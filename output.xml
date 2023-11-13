@@ -1,233 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 20:53:22.425" rpa="false" schemaversion="4">
-<suite id="s1" name="06-Loops" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\06-Loops.robot">
-<test id="s1-t1" name="Test 01" line="18">
-<while condition="${sayi1} &lt;= 10">
-<iter>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 21:22:01.681" rpa="false" schemaversion="4">
+<suite id="s1" name="07-Keywords" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\07-Keywords.robot">
+<test id="s1-t1" name="Test 01" line="8">
+<kw name="Ekrana Merhaba Yaz">
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
+<arg>Merhaba</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.495" endtime="20231113 20:53:22.496"/>
+<status status="PASS" starttime="20231113 21:22:01.745" endtime="20231113 21:22:01.746"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.497" level="INFO">${sayi1} = 1</msg>
-<status status="PASS" starttime="20231113 20:53:22.496" endtime="20231113 20:53:22.497"/>
+<status status="PASS" starttime="20231113 21:22:01.745" endtime="20231113 21:22:01.746"/>
 </kw>
-<status status="PASS" starttime="20231113 20:53:22.495" endtime="20231113 20:53:22.497"/>
-</iter>
-<iter>
+<kw name="Ekrana Yaz">
+<arg>Ahmet</arg>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
+<arg>${yazi}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.497" endtime="20231113 20:53:22.498"/>
+<status status="PASS" starttime="20231113 21:22:01.747" endtime="20231113 21:22:01.747"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.498" level="INFO">${sayi1} = 2</msg>
-<status status="PASS" starttime="20231113 20:53:22.498" endtime="20231113 20:53:22.498"/>
+<status status="PASS" starttime="20231113 21:22:01.746" endtime="20231113 21:22:01.747"/>
 </kw>
-<status status="PASS" starttime="20231113 20:53:22.497" endtime="20231113 20:53:22.498"/>
-</iter>
-<iter>
+<kw name="Ekrana Yaz">
+<arg>${isim} Nasilsin?</arg>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
+<arg>${yazi}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.499" endtime="20231113 20:53:22.499"/>
+<status status="PASS" starttime="20231113 21:22:01.748" endtime="20231113 21:22:01.748"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.500" level="INFO">${sayi1} = 3</msg>
-<status status="PASS" starttime="20231113 20:53:22.499" endtime="20231113 20:53:22.500"/>
+<status status="PASS" starttime="20231113 21:22:01.748" endtime="20231113 21:22:01.748"/>
 </kw>
-<status status="PASS" starttime="20231113 20:53:22.498" endtime="20231113 20:53:22.500"/>
-</iter>
-<iter>
+<kw name="Ekrana Wise Quarter Yaz" sourcename="Ekrana ${yazi} Yaz">
 <kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
+<arg>${yazi}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.500" endtime="20231113 20:53:22.501"/>
+<status status="PASS" starttime="20231113 21:22:01.749" endtime="20231113 21:22:01.749"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.502" level="INFO">${sayi1} = 4</msg>
-<status status="PASS" starttime="20231113 20:53:22.501" endtime="20231113 20:53:22.502"/>
+<status status="PASS" starttime="20231113 21:22:01.749" endtime="20231113 21:22:01.749"/>
 </kw>
-<status status="PASS" starttime="20231113 20:53:22.500" endtime="20231113 20:53:22.502"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.505" endtime="20231113 20:53:22.505"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.506" level="INFO">${sayi1} = 5</msg>
-<status status="PASS" starttime="20231113 20:53:22.506" endtime="20231113 20:53:22.506"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.504" endtime="20231113 20:53:22.506"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.507" endtime="20231113 20:53:22.507"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.508" level="INFO">${sayi1} = 6</msg>
-<status status="PASS" starttime="20231113 20:53:22.507" endtime="20231113 20:53:22.508"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.506" endtime="20231113 20:53:22.508"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.508" endtime="20231113 20:53:22.508"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.509" level="INFO">${sayi1} = 7</msg>
-<status status="PASS" starttime="20231113 20:53:22.509" endtime="20231113 20:53:22.509"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.508" endtime="20231113 20:53:22.509"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.510" endtime="20231113 20:53:22.510"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.511" level="INFO">${sayi1} = 8</msg>
-<status status="PASS" starttime="20231113 20:53:22.511" endtime="20231113 20:53:22.511"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.509" endtime="20231113 20:53:22.511"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.512" endtime="20231113 20:53:22.512"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.513" level="INFO">${sayi1} = 9</msg>
-<status status="PASS" starttime="20231113 20:53:22.513" endtime="20231113 20:53:22.513"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.512" endtime="20231113 20:53:22.513"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.514" endtime="20231113 20:53:22.514"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.515" level="INFO">${sayi1} = 10</msg>
-<status status="PASS" starttime="20231113 20:53:22.514" endtime="20231113 20:53:22.515"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.513" endtime="20231113 20:53:22.515"/>
-</iter>
-<iter>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.516" endtime="20231113 20:53:22.516"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 20:53:22.518" level="INFO">${sayi1} = 11</msg>
-<status status="PASS" starttime="20231113 20:53:22.516" endtime="20231113 20:53:22.518"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.515" endtime="20231113 20:53:22.519"/>
-</iter>
-<status status="PASS" starttime="20231113 20:53:22.495" endtime="20231113 20:53:22.520"/>
-</while>
-<for flavor="IN">
-<var>${element}</var>
-<value>@{liste}</value>
-<iter>
-<var name="${element}">Yusuf</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.524" endtime="20231113 20:53:22.524"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.523" endtime="20231113 20:53:22.524"/>
-</iter>
-<iter>
-<var name="${element}">Ahmet</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.525" endtime="20231113 20:53:22.525"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.525" endtime="20231113 20:53:22.526"/>
-</iter>
-<iter>
-<var name="${element}">Mehmet</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.526" endtime="20231113 20:53:22.529"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.526" endtime="20231113 20:53:22.529"/>
-</iter>
-<iter>
-<var name="${element}">Veli</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.529" endtime="20231113 20:53:22.530"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.529" endtime="20231113 20:53:22.530"/>
-</iter>
-<status status="PASS" starttime="20231113 20:53:22.523" endtime="20231113 20:53:22.530"/>
-</for>
-<for flavor="IN">
-<var>${element}</var>
-<value>${liste}</value>
-<iter>
-<var name="${element}">['Yusuf', 'Ahmet', 'Mehmet', 'Veli']</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:53:22.532" endtime="20231113 20:53:22.532"/>
-</kw>
-<status status="PASS" starttime="20231113 20:53:22.531" endtime="20231113 20:53:22.532"/>
-</iter>
-<status status="PASS" starttime="20231113 20:53:22.531" endtime="20231113 20:53:22.532"/>
-</for>
-<status status="PASS" starttime="20231113 20:53:22.494" endtime="20231113 20:53:22.533"/>
+<status status="PASS" starttime="20231113 21:22:01.744" endtime="20231113 21:22:01.750"/>
 </test>
-<status status="PASS" starttime="20231113 20:53:22.429" endtime="20231113 20:53:22.536"/>
+<status status="PASS" starttime="20231113 21:22:01.685" endtime="20231113 21:22:01.751"/>
 </suite>
 <statistics>
 <total>
@@ -236,7 +47,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="06-Loops">06-Loops</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="07-Keywords">07-Keywords</stat>
 </suite>
 </statistics>
 <errors>
