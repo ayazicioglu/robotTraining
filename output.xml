@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231109 22:27:10.692" rpa="false" schemaversion="4">
+<suite id="s1" name="02-Variables" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\02-Variables.robot">
+<test id="s1-t1" name="Bu benim ilk testim" line="10">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${isim} merhaba!</arg>
+<arg>Senin yasin ${yas}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231109 22:27:10.758" endtime="20231109 22:27:10.759"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sehir}</var>
+<arg>Denizli</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231109 22:27:10.760" level="INFO">${sehir} = Denizli</msg>
+<status status="PASS" starttime="20231109 22:27:10.759" endtime="20231109 22:27:10.760"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sehir}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231109 22:27:10.760" endtime="20231109 22:27:10.760"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sayi1}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231109 22:27:10.761" level="INFO">${sayi1} = 10</msg>
+<status status="PASS" starttime="20231109 22:27:10.760" endtime="20231109 22:27:10.761"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sayi2}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231109 22:27:10.761" level="INFO">${sayi2} = 20</msg>
+<status status="PASS" starttime="20231109 22:27:10.761" endtime="20231109 22:27:10.761"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${toplam}</var>
+<arg>${sayi1} + ${sayi2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231109 22:27:10.762" level="INFO">${toplam} = 30</msg>
+<status status="PASS" starttime="20231109 22:27:10.762" endtime="20231109 22:27:10.762"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${toplam}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231109 22:27:10.763" endtime="20231109 22:27:10.763"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${cumle}</var>
+<arg>BUNLAR BUYUK HARF</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231109 22:27:10.764" level="INFO">${cumle} = BUNLAR BUYUK HARF</msg>
+<status status="PASS" starttime="20231109 22:27:10.763" endtime="20231109 22:27:10.764"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${kucukHarf}</var>
+<arg>${cumle}</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20231109 22:27:10.764" level="INFO">${kucukHarf} = bunlar buyuk harf</msg>
+<status status="PASS" starttime="20231109 22:27:10.764" endtime="20231109 22:27:10.764"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${kucukHarf}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231109 22:27:10.765" endtime="20231109 22:27:10.765"/>
+</kw>
+<status status="PASS" starttime="20231109 22:27:10.757" endtime="20231109 22:27:10.766"/>
+</test>
+<status status="PASS" starttime="20231109 22:27:10.696" endtime="20231109 22:27:10.767"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="02-Variables">02-Variables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
