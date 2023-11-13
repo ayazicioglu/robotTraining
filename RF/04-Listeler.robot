@@ -1,6 +1,7 @@
 *** Settings ***
 #
 
+Library    Collections
 
 *** Variables ***
 #Bir variabe tanımlamak istediğimizde basinda $ kullanmak gerekir
@@ -17,6 +18,9 @@ Test 01
     Log To Console    ${isim_listesi}   #bu listeyi keyword olarak kullanmak istediğimizde basında $ kullanmak gerekir
     
     @{yeni_liste}    Create List    Aysel Aysegul Semra
+    Log To Console    ${yeni_liste}
+
+    Append To List    ${yeni_liste}    BETUL
     Log To Console    ${yeni_liste}
 
 

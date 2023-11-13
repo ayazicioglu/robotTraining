@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 20:27:16.348" rpa="false" schemaversion="4">
-<suite id="s1" name="04-Listeler" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\04-Listeler.robot">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 20:38:48.396" rpa="false" schemaversion="4">
+<suite id="s1" name="05-Dictionary" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\05-Dictionary.robot">
 <test id="s1-t1" name="Test 01" line="16">
 <kw name="Log To Console" library="BuiltIn">
-<arg>${isim_listesi}</arg>
+<arg>${yeni_Dict}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:27:16.409" endtime="20231113 20:27:16.410"/>
+<status status="PASS" starttime="20231113 20:38:48.455" endtime="20231113 20:38:48.457"/>
 </kw>
-<kw name="Create List" library="BuiltIn">
-<var>@{yeni_liste}</var>
-<arg>Aysel Aysegul Semra</arg>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20231113 20:27:16.411" level="INFO">@{yeni_liste} = [ Aysel Aysegul Semra ]</msg>
-<status status="PASS" starttime="20231113 20:27:16.411" endtime="20231113 20:27:16.411"/>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{yeni_bir_dict}</var>
+<arg>name=Ahmet</arg>
+<arg>yas=30</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231113 20:38:48.458" level="INFO">&amp;{yeni_bir_dict} = { name=Ahmet | yas=30 }</msg>
+<status status="PASS" starttime="20231113 20:38:48.457" endtime="20231113 20:38:48.458"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${yeni_liste}</arg>
+<arg>${yeni_bir_dict}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 20:27:16.411" endtime="20231113 20:27:16.411"/>
+<status status="PASS" starttime="20231113 20:38:48.459" endtime="20231113 20:38:48.460"/>
 </kw>
-<status status="PASS" starttime="20231113 20:27:16.409" endtime="20231113 20:27:16.412"/>
+<status status="PASS" starttime="20231113 20:38:48.454" endtime="20231113 20:38:48.460"/>
 </test>
-<status status="PASS" starttime="20231113 20:27:16.352" endtime="20231113 20:27:16.413"/>
+<status status="PASS" starttime="20231113 20:38:48.400" endtime="20231113 20:38:48.462"/>
 </suite>
 <statistics>
 <total>
@@ -30,7 +31,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="04-Listeler">04-Listeler</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="05-Dictionary">05-Dictionary</stat>
 </suite>
 </statistics>
 <errors>
