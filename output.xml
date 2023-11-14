@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 21:51:51.259" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 22:05:15.425" rpa="false" schemaversion="4">
 <suite id="s1" name="08-Keywords" source="C:\Users\Ahmet Yazıcıoğlu\Desktop\Robot\RF\08-Keywords.robot">
 <kw name="Testi Edge tarayici ile baslat" type="SETUP" sourcename="Testi ${browser} tarayici ile baslat">
+<doc>Bu keyword konsoldan parametre olarak gelen browser adi ile testi ayaga kaldirir</doc>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${browser}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.329" endtime="20231113 21:51:51.329"/>
+<status status="PASS" starttime="20231113 22:05:15.501" endtime="20231113 22:05:15.502"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.328" endtime="20231113 21:51:51.329"/>
+<status status="PASS" starttime="20231113 22:05:15.501" endtime="20231113 22:05:15.502"/>
 </kw>
-<test id="s1-t1" name="Test 01" line="13">
+<test id="s1-t1" name="Test 01" line="16">
 <kw name="Create List" library="BuiltIn">
 <var>@{listem}</var>
 <arg>2</arg>
@@ -18,11 +19,12 @@
 <arg>8</arg>
 <arg>10</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20231113 21:51:51.330" level="INFO">@{listem} = [ 2 | 4 | 6 | 8 | 10 ]</msg>
-<status status="PASS" starttime="20231113 21:51:51.330" endtime="20231113 21:51:51.330"/>
+<msg timestamp="20231113 22:05:15.503" level="INFO">@{listem} = [ 2 | 4 | 6 | 8 | 10 ]</msg>
+<status status="PASS" starttime="20231113 22:05:15.503" endtime="20231113 22:05:15.503"/>
 </kw>
 <kw name="Sayilari Bol">
 <arg>${listem}</arg>
+<doc>Bu keyword gelen sayilari ikiye boler</doc>
 <for flavor="IN">
 <var>${e}</var>
 <value>@{liste}</value>
@@ -32,15 +34,15 @@
 <var>${sonuc}</var>
 <arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:51:51.332" level="INFO">${sonuc} = 1.0</msg>
-<status status="PASS" starttime="20231113 21:51:51.331" endtime="20231113 21:51:51.332"/>
+<msg timestamp="20231113 22:05:15.507" level="INFO">${sonuc} = 1.0</msg>
+<status status="PASS" starttime="20231113 22:05:15.505" endtime="20231113 22:05:15.507"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.332" endtime="20231113 21:51:51.332"/>
+<status status="PASS" starttime="20231113 22:05:15.507" endtime="20231113 22:05:15.509"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.331" endtime="20231113 21:51:51.333"/>
+<status status="PASS" starttime="20231113 22:05:15.505" endtime="20231113 22:05:15.509"/>
 </iter>
 <iter>
 <var name="${e}">4</var>
@@ -48,15 +50,15 @@
 <var>${sonuc}</var>
 <arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:51:51.333" level="INFO">${sonuc} = 2.0</msg>
-<status status="PASS" starttime="20231113 21:51:51.333" endtime="20231113 21:51:51.333"/>
+<msg timestamp="20231113 22:05:15.510" level="INFO">${sonuc} = 2.0</msg>
+<status status="PASS" starttime="20231113 22:05:15.509" endtime="20231113 22:05:15.510"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.333" endtime="20231113 21:51:51.334"/>
+<status status="PASS" starttime="20231113 22:05:15.510" endtime="20231113 22:05:15.511"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.333" endtime="20231113 21:51:51.334"/>
+<status status="PASS" starttime="20231113 22:05:15.509" endtime="20231113 22:05:15.511"/>
 </iter>
 <iter>
 <var name="${e}">6</var>
@@ -64,15 +66,15 @@
 <var>${sonuc}</var>
 <arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:51:51.334" level="INFO">${sonuc} = 3.0</msg>
-<status status="PASS" starttime="20231113 21:51:51.334" endtime="20231113 21:51:51.334"/>
+<msg timestamp="20231113 22:05:15.512" level="INFO">${sonuc} = 3.0</msg>
+<status status="PASS" starttime="20231113 22:05:15.511" endtime="20231113 22:05:15.512"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.335" endtime="20231113 21:51:51.336"/>
+<status status="PASS" starttime="20231113 22:05:15.512" endtime="20231113 22:05:15.512"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.334" endtime="20231113 21:51:51.336"/>
+<status status="PASS" starttime="20231113 22:05:15.511" endtime="20231113 22:05:15.513"/>
 </iter>
 <iter>
 <var name="${e}">8</var>
@@ -80,15 +82,15 @@
 <var>${sonuc}</var>
 <arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:51:51.337" level="INFO">${sonuc} = 4.0</msg>
-<status status="PASS" starttime="20231113 21:51:51.337" endtime="20231113 21:51:51.337"/>
+<msg timestamp="20231113 22:05:15.513" level="INFO">${sonuc} = 4.0</msg>
+<status status="PASS" starttime="20231113 22:05:15.513" endtime="20231113 22:05:15.513"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.338" endtime="20231113 21:51:51.338"/>
+<status status="PASS" starttime="20231113 22:05:15.513" endtime="20231113 22:05:15.514"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.336" endtime="20231113 21:51:51.338"/>
+<status status="PASS" starttime="20231113 22:05:15.513" endtime="20231113 22:05:15.514"/>
 </iter>
 <iter>
 <var name="${e}">10</var>
@@ -96,23 +98,24 @@
 <var>${sonuc}</var>
 <arg>${e}/2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231113 21:51:51.339" level="INFO">${sonuc} = 5.0</msg>
-<status status="PASS" starttime="20231113 21:51:51.338" endtime="20231113 21:51:51.339"/>
+<msg timestamp="20231113 22:05:15.516" level="INFO">${sonuc} = 5.0</msg>
+<status status="PASS" starttime="20231113 22:05:15.515" endtime="20231113 22:05:15.516"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231113 21:51:51.339" endtime="20231113 21:51:51.339"/>
+<status status="PASS" starttime="20231113 22:05:15.516" endtime="20231113 22:05:15.517"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.338" endtime="20231113 21:51:51.339"/>
+<status status="PASS" starttime="20231113 22:05:15.515" endtime="20231113 22:05:15.517"/>
 </iter>
-<status status="PASS" starttime="20231113 21:51:51.331" endtime="20231113 21:51:51.339"/>
+<status status="PASS" starttime="20231113 22:05:15.504" endtime="20231113 22:05:15.517"/>
 </for>
-<status status="PASS" starttime="20231113 21:51:51.331" endtime="20231113 21:51:51.339"/>
+<status status="PASS" starttime="20231113 22:05:15.504" endtime="20231113 22:05:15.517"/>
 </kw>
-<status status="PASS" starttime="20231113 21:51:51.329" endtime="20231113 21:51:51.340"/>
+<status status="PASS" starttime="20231113 22:05:15.502" endtime="20231113 22:05:15.518"/>
 </test>
-<status status="PASS" starttime="20231113 21:51:51.262" endtime="20231113 21:51:51.341"/>
+<doc>Bu suite ile ABC numarali US nin ozellikleri test edilir</doc>
+<status status="PASS" starttime="20231113 22:05:15.430" endtime="20231113 22:05:15.519"/>
 </suite>
 <statistics>
 <total>

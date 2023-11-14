@@ -13,7 +13,8 @@ Library    Collections
 
 
 *** Test Cases ***
-Test 01
+Test 01    
+    [Documentation]    Bu test deneme amacli olusturuldu
     @{listem}=    Create List    2    4    6    8    10
     Sayilari Bol    ${listem}
 
