@@ -1,0 +1,10 @@
+# .gitignore
+
+# XML dosyalarını ignore et
+*.xml
+
+# HTML dosyalarını ignore et
+*.html
+
+# PNG dosyalarını ignore et
+*.png
