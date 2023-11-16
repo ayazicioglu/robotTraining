@@ -20,8 +20,8 @@ print(randint(0, 1))
 
 from rembg import remove
 
-input_path = "Python/Gun-02/aslan.jpeg"
-output_path = "Python/Gun-02/aslan.png"
+input_path = "Python/Day2/as.jpg"
+output_path = "Python/Day2/aslan.jpg"
 
 with open(input_path, 'rb') as i:
     with open(output_path, 'wb') as o:
