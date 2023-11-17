@@ -4,7 +4,12 @@ Library     Collections
 Suite Setup    Testi ${browser} tarayici ile baslat  #tum testlerden onde calismak icin suite setup kullandik
     
     # ayrica terminale "robot -v browser:Edge .\RF\08-Keywords.robot" yazarak istedigimiz tarayicida calistirmak mumkun olabilirdi
-
+        # Komut satirindan parametre gondermek icin -v DEGISKENADI:DEGER kullanilir
+        # TESTIN PATH'i herzaman en sona yazilir
+        # Her variable icin ayri ayri -v kullanilir
+            # robot -v BROWSER:Opera -v SIFRE:123456 -v MAIL:abc@abc.com RF/08-Keywords.robot
+            # Daha onceden tanimli bir degiskene konsoldan komut satiri ile yeni deger verilebilir.
+            # Komut satirindan gonderilen deger öncelikli kabul edilir.
 
 Library    Collections
 
