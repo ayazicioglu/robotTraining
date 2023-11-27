@@ -1,6 +1,8 @@
 *** Settings ***
 Resource    ../resources/keywords.resource
 Library     ../libs/rastgeleSayi.py
+Library    DebugLibrary
+
 
 
 *** Variables ***
